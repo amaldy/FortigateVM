@@ -1,7 +1,7 @@
 resource "aws_key_pair" "fgatekey" {
-  key_name = "${var.tags.name}-key"
+  key_name   = "${var.tags.name}-key"
   public_key = file("${var.keyname}")
-tags = {
+  tags = {
     Name          = "${var.tags.name}-alkira_training"
     ResourceOwner = var.tags.resourceowner
     Forever       = var.tags.forever
