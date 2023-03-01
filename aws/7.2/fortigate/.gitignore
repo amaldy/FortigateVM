@@ -59,4 +59,4 @@ terraform.rc
 variables.tf
 # Local credentials
 credentials.json
-*.DS_Store
+.DS_Store
